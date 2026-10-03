@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AutoLux - Website mua bán ô tô">
+    <title>TUAN AUTO - Mua bán ô tô</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav">
+            <a href="#" class="logo">
+                <span>TUAN</span>AUTO
+
+            <nav class="menu">
+                <a href="#home">Trang chủ</a>
+                <a href="#cars">Xe đang bán</a>
+                <a href="#about">Về chúng tôi</a>
+                <a href="#contact">Liên hệ</a>
+            </nav>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+
+            <a href="#contact" class="btn btn-primary header-btn">
+                Tư vấn ngay
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">🚘 XE CHÍNH HÃNG - GIÁ TỐT</span>
+
+                <h1>
+                    cái dmm
+                    <span>Trườn ạ</span>
+                </h1>
+
+                <p>
+                    Khám phá hàng trăm mẫu xe chất lượng cao,
+                    giá cạnh tranh và hỗ trợ trả góp nhanh chóng.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#cars" class="btn btn-primary">
+                        Xem xe ngay
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Liên hệ tư vấn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEARCH -->
+    <section class="search-box">
+        <div class="container">
+            <div class="search-card">
+
+                <div class="search-item">
+                    <label>Hãng xe</label>
+                    <select id="brandFilter">
+                        <option value="all">Tất cả hãng</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Hyundai">Hyundai</option>
+                    </select>
+                </div>
+
+                <div class="search-item">
+                    <label>Loại xe</label>
+                    <select id="typeFilter">
+                        <option value="all">Tất cả</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="MPV">MPV</option>
+                        <option value="Bán tải">Bán tải</option>
+                    </select>
+                </div>
+
+                <div class="search-item">
+                    <label>Giá tối đa</label>
+                    <select id="priceFilter">
+                        <option value="all">Không giới hạn</option>
+                        <option value="1000000000">1 tỷ</option>
+                        <option value="1500000000">1.5 tỷ</option>
+                        <option value="2000000000">2 tỷ</option>
+                        <option value="3000000000">3 tỷ</option>
+                    </select>
+                </div>
+
+                <button class="btn btn-primary search-btn" id="searchBtn">
+                    🔍 Tìm xe
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CARS -->
+    <section class="cars-section" id="cars">
+        <div class="container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">DANH SÁCH XE</span>
+                    <h2>Xe nổi bật</h2>
+                </div>
+
+                <span id="carCount" class="car-count"></span>
+            </div>
+
+            <div class="cars-grid" id="carsGrid">
+                <!-- JavaScript sẽ thêm xe -->
+            </div>
+
+            <div class="empty-state" id="emptyState">
+                <div>🚗</div>
+                <h3>Không tìm thấy xe</h3>
+                <p>Hãy thử thay đổi điều kiện tìm kiếm.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="features" id="about">
+        <div class="container">
+
+            <div class="section-heading center">
+                <div>
+                    <span class="section-label">TẠI SAO CHỌN CHÚNG TÔI?</span>
+                    <h2>Mua xe dễ dàng hơn</h2>
+                </div>
+            </div>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">✓</div>
+                    <h3>Xe chính hãng</h3>
+                    <p>
+                        Cam kết xe có nguồn gốc rõ ràng,
+                        thông tin minh bạch.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">₫</div>
+                    <h3>Giá cạnh tranh</h3>
+                    <p>
+                        Chính sách giá tốt và nhiều chương trình
+                        ưu đãi hấp dẫn.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Hỗ trợ nhanh</h3>
+                    <p>
+                        Đội ngũ tư vấn hỗ trợ bạn lựa chọn
+                        chiếc xe phù hợp.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛡</div>
+                    <h3>Bảo hành uy tín</h3>
+                    <p>
+                        Chính sách bảo hành và hậu mãi
+                        rõ ràng, chuyên nghiệp.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-wrapper">
+
+            <div class="contact-info">
+                <span class="section-label">LIÊN HỆ</span>
+
+                <h2>Bạn đang tìm chiếc xe nào?</h2>
+
+                <p>
+                    Để lại thông tin, nhân viên AutoLux sẽ liên hệ
+                    và tư vấn mẫu xe phù hợp với nhu cầu của bạn.
+                </p>
+
+                <div class="contact-details">
+                    <div>
+                        <strong>📞 Hotline</strong>
+                        <span>0389650366</span>
+                    </div>
+
+                    <div>
+                        <strong>✉ Email</strong>
+                        <span>ngtuann555@gmail.com</span>
+                    </div>
+
+                    <div>
+                        <strong>📍 Địa chỉ</strong>
+                        <span>123 Phú Lương, Hà Nội</span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+
+                <h3>Đăng ký tư vấn</h3>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Họ và tên"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="Số điện thoại"
+                    required
+                >
+
+                <select id="customerCar">
+                    <option value="">Bạn quan tâm mẫu xe nào?</option>
+                </select>
+
+                <textarea
+                    id="customerMessage"
+                    rows="4"
+                    placeholder="Nội dung cần tư vấn..."
+                ></textarea>
+
+                <button type="submit" class="btn btn-primary">
+                    Gửi yêu cầu
+                </button>
+
+                <p class="form-message" id="formMessage"></p>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div>
+                <a href="#" class="logo">
+                    <span>TUAN</span>AUTO
+                </a>
+
+                <p>
+                    Đồng hành cùng bạn trên mọi hành trình.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#home">Trang chủ</a>
+                <a href="#cars">Xe đang bán</a>
+                <a href="#about">Về chúng tôi</a>
+                <a href="#contact">Liên hệ</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 TUAN AUTO. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- MODAL CHI TIẾT XE -->
+    <div class="modal" id="carModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="modalClose">
+                ×
+            </button>
+
+            <img id="modalImage" src="" alt="Xe">
+
+            <div class="modal-info">
+                <span id="modalBrand"></span>
+
+                <h2 id="modalTitle"></h2>
+
+                <div class="modal-price" id="modalPrice"></div>
+
+                <div class="car-specs">
+                    <div>
+                        <strong>Năm</strong>
+                        <span id="modalYear"></span>
+                    </div>
+
+                    <div>
+                        <strong>Loại</strong>
+                        <span id="modalType"></span>
+                    </div>
+
+                    <div>
+                        <strong>Nhiên liệu</strong>
+                        <span id="modalFuel"></span>
+                    </div>
+
+                    <div>
+                        <strong>Hộp số</strong>
+                        <span id="modalTransmission"></span>
+                    </div>
+                </div>
+
+                <p id="modalDescription"></p>
+
+                <a href="#contact" class="btn btn-primary modal-contact">
+                    Đăng ký tư vấn
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
